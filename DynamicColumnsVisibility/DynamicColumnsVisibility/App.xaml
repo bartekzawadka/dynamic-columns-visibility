@@ -1,9 +1,11 @@
 ﻿<Application x:Class="DynamicColumnsVisibility.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DynamicColumnsVisibility"
+             xmlns:viewModel="clr-namespace:DynamicColumnsVisibility.ViewModel"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+         <ResourceDictionary>
+             <viewModel:ViewModelLocator x:Key="Locator" xmlns:vm="clr-namespace:"/>
+         </ResourceDictionary>
     </Application.Resources>
 </Application>
